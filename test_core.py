@@ -14,6 +14,6 @@ city.add_metric('Construction', get_construction())
 city.add_metric('Traffic', get_traffic())
 city.add_metric('Graffiti', get_graffiti())
 
-city.visualize()
+city.visualize(metrics=['SE_A14006_', 'Traffic', 'Graffiti'])
 
-city.to_kepler('map.html', ['Crime Density'])
+city.to_kepler('map.html', ['SE_A14006_'])
